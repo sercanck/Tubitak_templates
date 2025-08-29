@@ -1,0 +1,89 @@
+\documentclass{tubitak}
+%%%%Turkish babel paketinin guncel degilse bir takim sıkıntılar oluşabiliyor. Eger hata mesajı alıyorsanız .cls dosyasında turkish-babel'i kapatın ve chapter başlıklarınızı BÜYÜK HARFLERLE yazınız.
+
+
+\usepackage{lipsum} 
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+
+\input{defs} %optional
+
+\baslik{Sapanca ve Abant Gölü Su Örneklerinde Ağır Metal Konsantrasyonlarının Karşılaştırmalı Olarak İncelenmesi}
+\programkod{3501}
+\projeno{122F456}
+\tarihyer{Şubat 2025}{İstanbul}
+
+\yurutucu{Dr. Sercan ÇIKINTOĞLU}
+\addarastirmaci{Arastirmaci1}
+\adddanisman{Danisman1}
+\addbursiyer{Bursiyer1}
+\addbursiyer{Bursiyer2}
+\addbursiyer{Bursiyer3}
+
+
+\begin{document}
+
+\pagenumbering{gobble}
+\makekapak
+
+\begin{onsoz}
+\lipsum[1]
+\end{onsoz}
+
+{\hypersetup{linkcolor=black}
+\tableofcontents
+\listoffigures
+\listoftables
+}
+\clearpage
+\pagenumbering{roman}
+\begin{ozet}{keyword1, keyword2...}
+\lipsum[1-3]
+\end{ozet}
+
+\begin{summary}{keyword1, keyword2,...}
+\lipsum[1-3]
+\end{summary}
+
+\clearpage
+\pagenumbering{arabic}
+
+
+\chapter{Giriş}
+\lipsum[1-5]
+
+\chapter{Literatür Özeti}
+\lipsum[1-5]
+
+
+
+\chapter{Gereç ve yöntem}
+\lipsum[1-5]
+
+\chapter{Bulgular}
+\lipsum[1-5]
+
+\chapter{Tartışma}
+\lipsum[1-5]
+
+\chapter{Sonuç ve Öneriler}
+\lipsum[1-5]
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{KAYNAKLAR} 
+\setlength{\parindent}{0pt}            
+\bibliographystyle{tubitak}
+\bibliography{refs}
+
+
+%\clearpage
+%\chapter*{EKLER}
+%\addcontentsline{toc}{chapter}{EKLER} 
+
+
+\end{document}

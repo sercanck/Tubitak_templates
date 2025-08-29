@@ -1,0 +1,544 @@
+\documentclass[a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{uarial}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[fontsize=9pt]{scrextend}
+
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{graphics}
+\usepackage{xcolor,colortbl}
+\usepackage{tabularx}
+\usepackage{framed}
+\usepackage{caption}
+\usepackage{pdflscape}
+\usepackage{makecell}
+
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\fontsize{9}{15}\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\fontsize{9}{12}\bfseries}{\thesubsection.}{1em}{}
+
+\newcommand{\forceindent}{\leavevmode{\parindent=1em\indent}}
+
+%\renewcommand{\figurename}{\textbf{Şekil}}
+%\renewcommand{\thefigure}{\textbf{\arabic{figure}}}
+
+\usepackage{caption}
+\renewcommand{\figurename}{Şekil}
+\renewcommand{\tablename}{Tablo}
+
+%\renewcommand{\thefigure}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{figure}}
+%\DeclareCaptionFormat{llap}{\llap{#1#2}#3\par}
+%\captionsetup{format=llap,labelsep=period,singlelinecheck=no}
+\captionsetup [figure]{labelfont=bf,font=singlespacing,font=small,
+position=bottom,singlelinecheck=true,aboveskip=12pt,belowskip=12pt}
+\captionsetup [table]{format=hang,labelfont=bf,font=singlespacing,font=small,
+position=above,singlelinecheck=true,aboveskip=12pt,belowskip=12pt}
+
+
+
+\usepackage[bookmarks, colorlinks, breaklinks, pdftitle={Tubitak 3501},pdfauthor={Yazar},
+            citecolor=blue]{hyperref}
+\usepackage[authoryear,sort&compress,round]{natbib}
+\usepackage{url,doi}
+\renewcommand{\bibsection}{\textbf{EK-1: KAYNAKLAR}}
+
+\usepackage{setspace}
+\usepackage[top=3.0cm,headheight=1.5cm,headsep=0.5cm,
+            left=2cm,textwidth=17.2cm,textheight=24cm]{geometry}
+\usepackage{indentfirst}
+\setlength{\parindent}{15pt}            
+\onehalfspacing
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\cfoot{\vspace{2pt}\thepage}
+\chead{\includegraphics{tubitak.jpg}}
+\lfoot{\small 3501BF-01 Güncelleme Tarihi: 30/12/2023} %font 8
+
+
+\input{defs}
+\pagenumbering{arabic}
+
+
+\begin{document}
+\begin{center}
+\fcolorbox{black}{lightgray}{
+\parbox{0.98\textwidth}{
+\centering{\Large\textbf{
+3501 - KARİYER GELİŞTİRME PROGRAMI \\
+PROJE BAŞVURU FORMU
+}}
+}
+}
+\end{center}
+\vspace{0.3cm}
+
+\begin{center}
+\begin{tabular}{|m{0.98\textwidth}|}
+\hline\vspace{1pt}
+\textbf{Proje Başlığı:} Asd \\
+\hline\vspace{1pt}
+\textbf{Proje Yürütücüsü:} Asd ASD\\
+\hline\vspace{1pt}
+\textbf{Projenin Yürütüleceği Kurum/Kuruluş:} Asd \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{0.3cm}
+\noindent\textbf{PROJE YÜRÜTÜCÜSÜNÜN TEZ BİLGİLERİ}
+\vspace{0.3cm}
+
+\noindent\textbf{Proje Yürütücüsünün Yüksek Lisans Tezinin Başlığı ve Yaygın Etkisi {\small(bildiri, makale, kitap bölümü, kitap, vb.)} verilir.}
+\vspace{-0.3cm}
+
+\begin{center}
+\begin{tabular}{|m{0.98\textwidth}|}
+\hline\vspace{1pt}
+\textbf{Başlık:} Asd \\
+\hline\vspace{1pt}
+\textbf{Yaygın Etki:} 
+Asd \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{0.3cm}
+\noindent\textbf{Doktora / Tıpta Uzmanlık Tezinin Başlığı ve Yaygın Etkisi (bildiri, makale, kitap bölümü, kitap, vb.) verilir.}
+\vspace{-0.3cm}
+
+\begin{center}
+\begin{tabular}{|m{0.98\textwidth}|}
+\hline\vspace{1pt}
+\textbf{Başlık:} Asd \\
+\hline\vspace{1pt}
+\textbf{Yaygın Etki:} 
+Asd \\
+\hline
+\end{tabular}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.3cm}
+\noindent\textbf{ÖZET}
+\vspace{0.1cm}
+
+\noindent Türkçe ve İngilizce özetlerin projenin (a) \textbf{kariyer geliştirme potansiyeli,} (b) önemi, (c) özgün değeri, (d) araştırma sorusu
+veya hipotezi, (e) amaç ve hedefleri, (f) yöntemi ve (g) yaygın etkisinin ana hatlarını kapsaması beklenir. Türkçe özet 450,
+İngilizce özet ise 600 kelime ile sınırlandırılmalıdır. Bu bölümün en son yazılması önerilir. 
+
+\begin{ozet}
+\begin{center}
+\textbf{Proje Özeti}
+\end{center}
+
+\lipsum[1-3]
+\tcbline*
+\noindent\textbf{Anahtar Kelimeler:} 
+Kelime1, Kelime2, Kelime3
+\end{ozet}
+
+
+\begin{summary}{Title}
+\begin{center}
+\textbf{Summary}
+\end{center}
+
+\lipsum[1-5]
+\tcbline*
+\noindent\textbf{Keywords:} 
+Keyword1, Keyword2
+\end{summary}
+
+\section{KARİYER GELİŞTİRME POTANSİYELİ}
+
+\noindent Proje önerisinin yürütücünün kariyer gelişimine yapacağı katkılar, yeni yetenekler veya disiplinlerarası çalışma yetkinliği
+kazandırma potansiyeli ile proje kapsamında yapılacak araştırmaların projenin yürütüldüğü kuruluşa olası katkıları
+açıklanır. Yürütücünün ayrıca yüksek lisans, doktora veya tıpta uzmanlık çalışmalarının proje önerisi ile olan ilişkisi
+belirtilir. Yürütücünün proje kapsamında ve sonrasında kariyer yol haritasını belirtmesi beklenir.
+
+\begin{framed}
+\lipsum[1-5]
+\end{framed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{ÖZGÜN DEĞER}
+\subsection{Konunun Önemi, Projenin Özgün Değeri ve Araştırma Sorusu veya Hipotezi}
+\noindent Proje önerisinde ele alınan konunun kapsamı ve sınırları ile önemi literatürün eleştirel bir değerlendirmesinin yanı sıra nitel
+veya nicel verilerle açıklanır.\\
+
+\noindent Özgün değer yazılırken projenin bilimsel kalitesi, farklılığı ve yeniliği, hangi eksikliği nasıl gidereceği veya hangi soruna
+nasıl bir çözüm geliştireceği veya ilgili bilim ve teknoloji alan(lar)ına kavramsal, kuramsal veya metodolojik olarak ne gibi
+özgün katkılarda bulunacağı literatüre atıf yapılarak açıklanır. Kaynaklar \url{http://www.tubitak.gov.tr/ardeb-kaynakca}
+sayfasındaki açıklamalara uygun olarak EK-1’de verilir.\\
+
+\noindent Projenin araştırma sorusu ve varsa hipotezi veya ele aldığı problem(ler)i açık bir şekilde ortaya konulur.
+
+\begin{framed}
+
+\lipsum[1-5]
+
+\end{framed}
+
+\subsection{Amaç ve Hedefler}
+
+\noindent Proje önerisinin amacı ve hedefleri açık, ölçülebilir, gerçekçi ve proje süresince ulaşılabilir nitelikte olacak şekilde yazılır.
+
+\begin{framed}
+\lipsum[1-3]
+\end{framed}
+
+\section{YÖNTEM} 
+
+\noindent Projede uygulanacak yöntem ve araştırma teknikleri (veri toplama araçları ve analiz yöntemleri dahil) ilgili literatüre atıf
+yapılarak açıklanır. Yöntem ve tekniklerin projede öngörülen amaç ve hedeflere ulaşmaya elverişli olduğu ortaya konulur.
+Yöntem bölümünün araştırmanın tasarımını, bağımlı ve bağımsız değişkenleri ve istatistiksel yöntemleri kapsaması
+gerekir. Proje önerisinde herhangi bir ön çalışma veya fizibilite yapıldıysa bunların sunulması beklenir. Yöntemlerin iş
+paketleri ile ilişkilendirilmesi gerekir.
+
+\begin{framed}
+\lipsum[1-5]\\
+
+\textbf{İP1:} 
+\lipsum[1-5]\\
+
+\textbf{İP2:} 
+\lipsum[1-5]
+\end{framed}
+
+\begin{landscape}
+\thispagestyle{mylandscape}
+\vspace*{1.0cm}
+\section{PROJE YÖNETİMİ}
+\vspace{-0.3cm}
+\subsection{Yönetim Düzeni: İş Paketleri (İP), Görev Dağılımı ve Süreleri}
+
+\begin{singlespace}
+\noindent Projede yer alacak başlıca iş paketleri ve hedefleri, her bir iş paketinin kimler tarafından hangi sürede gerçekleştirileceği, başarı ölçütü ve projenin başarısına katkısı ``İş-Zaman Çizelgesi''
+doldurularak verilir. Her bir iş paketinde görev alacak yürütücü, araştırmacı ve personel ayrıntılı olarak belirtilir. Literatür taraması, gelişme ve sonuç raporu hazırlama aşamaları, proje sonuçlarının paylaşımı, makale yazımı ve malzeme alımı ayrı birer iş paketi olarak \underline{gösterilmemelidir}.\\
+
+\noindent Başarı ölçütü olarak her bir iş paketinin hangi kriterleri sağladığında başarılı sayılacağı açıklanır. Başarı ölçütü, ölçülebilir ve izlenebilir nitelikte olacak şekilde nicel veya nitel ölçütlerle (ifade,
+sayı, yüzde, vb.) belirtilir.
+\end{singlespace}
+
+\begin{center}
+\textbf{İŞ-ZAMAN ÇİZELGESİ (*)}\\
+\vspace{0.5cm}
+%\begin{tabular}{|*{5}{c|}}
+\begin{tabular}{|p{1.1cm}|p{5.5cm}|p{3.5cm}|p{4cm}|p{7.5cm}|}
+\hline %\vspace*{2pt}
+\rowcolor{Gray}
+\makecell[c]{\textbf{İP No}} &
+\makecell[c]{\textbf{İş Paketlerinin Adı ve Hedefleri}} &
+\makecell[c]{\textbf{Kim(ler) Tarafından}\\
+\textbf{Gerçekleştirileceği}} &
+\makecell[c]{\textbf{Zaman Aralığı }\\
+\textbf{(0-24 Ay)}}  &
+\makecell[c]{\textbf{ Başarı Ölçütü ve Projenin Başarısına Katkısı }}
+\\ \hline
+\makecell[c]{1} &
+\makecell[l]{Asd\\
+fgh} &
+\makecell[c]{Yürütücü} &
+\makecell[c]{4} &
+\makecell[l]{
+Asd ($\%35$)}\\
+\hline
+\makecell[c]{2} &
+\makecell[l]{
+Asd } &
+\makecell[c]{Yürütücü} &
+\makecell[c]{4} &
+\makecell[l]{
+Asd ($\%5$)}\\ 
+\hline
+\end{tabular}
+\flushleft{\footnotesize (*) Çizelgedeki satırlar ve sütunlar gerektiği kadar genişletilebilir ve çoğaltılabilir.}
+\end{center}
+
+\end{landscape}
+\newpage
+
+\pagestyle{fancy}
+\subsection{Risk Yönetimi}
+
+\begin{singlespace}
+\small
+\noindent Projenin başarısını olumsuz yönde etkileyebilecek riskler ve bu risklerle karşılaşıldığında projenin başarıyla yürütülmesini
+sağlamak için alınacak tedbirler (B Planı) ilgili iş paketleri belirtilerek ana hatlarıyla aşağıdaki Risk Yönetimi Tablosu’nda
+ifade edilir. B planlarının uygulanması projenin temel hedeflerinden sapmaya yol açmamalıdır.
+\end{singlespace}
+
+
+\begin{center}
+\textbf{RİSK YÖNETİMİ TABLOSU (*)}\\
+\vspace{0.3cm}
+\begin{tabular}{|*{3}{c|}}
+\hline
+\rowcolor{Gray}
+\makecell[c]{\textbf{İP}\\
+\textbf{No}} &
+\textbf{En Önemli Riskler} &
+\textbf{Risk Yönetimi (B Planı)}
+\\ \hline
+1-2 & 
+\makecell[l]{
+Asd \\
+asd}
+&
+\makecell[l]{
+Asd \\
+asd.}
+\\ \hline
+\end{tabular}
+\flushleft{\footnotesize (*) Çizelgedeki satırlar ve sütunlar gerektiği kadar genişletilebilir ve çoğaltılabilir.}
+\end{center}
+
+\subsection{Araştırma Olanakları}
+
+\begin{singlespace}
+\noindent Bu bölümde projenin yürütüleceği kurum ve kuruluşlarda var olan ve projede kullanılacak olan altyapı/ekipman
+(laboratuvar, araç, makine-teçhizat, vb.) olanakları belirtilir.
+\end{singlespace}
+
+
+\begin{center}
+\textbf{ARAŞTIRMA OLANAKLARI TABLOSU (*)}\\
+\vspace{0.3cm}
+\begin{tabular}{|p{8.2cm}|p{8.2cm}|}
+\hline
+\rowcolor{Gray}
+\makecell[c]{
+\textbf{Kuruluşta Bulunan Altyapı/Ekipman Türü, Modeli}\\
+(Laboratuvar, Araç, Makine-Teçhizat, vb.)}
+&
+\textbf{Projede Kullanım Amacı}
+\\ \hline
+\makecell[c]{-}
+&
+\makecell[c]{-}
+\\ \hline
+\end{tabular}
+\flushleft{\footnotesize (*) Çizelgedeki satırlar ve sütunlar gerektiği kadar genişletilebilir ve çoğaltılabilir.}
+\end{center}
+
+\newpage
+\section{YAYGIN ETKİ}
+\begin{singlespace}
+\small
+\noindent Proje başarıyla gerçekleştirildiği takdirde projeden elde edilmesi öngörülen çıktı(lar) ve etki(ler) ile bu çıktı ve etkilerin
+paylaşımı ve yayılımına yönelik faaliyet(ler)/ürün(ler)/hizmet(ler) kısa ve net cümlelerle ilgili bölümde belirtilmelidir.
+\end{singlespace}
+
+
+\subsection{Projeden Elde Edilmesi Öngörülen Çıktılara İlişkin Bilgiler}
+
+\begin{singlespace}
+\small
+\noindent Bu bölümde, projeden elde edilmesi öngörülen çıktılara yer verilmelidir. Söz konusu çıktılar, amaçlarına göre belirlenen
+kategorilere ayrılarak belirtilmeli, nicel gösterge ve hedeflere dayandırılmalı ve varsa bu çıktıları kullanacak
+kurum/kuruluş(lar)a ilişkin bilgi verilmelidir. Her bir çıktının elde edilmesinin öngörüldüğü zaman aralığı belirtilmelidir.
+\end{singlespace}
+
+\begin{center}
+\begin{tabular}{|*{3}{c|}}
+\hline
+\cellcolor{Gray} 
+\textbf{Çıktı Türü} &
+\textbf{Çıktı} &
+\makecell[c]{
+\textbf{Çıktının Elde Edilmesi}\\
+\textbf{Öngörülen Zaman Aralığı (*)}}
+\\ \hline
+\cellcolor{Gray} 
+\makecell[l]{
+\textbf{Bilimsel/Akademik Çıktılar}\\
+(Bildiri, Makale, Kitap Bölümü, Kitap vb.):}
+&
+\makecell[l]{
+Asd}
+&
+18-36 ay 
+\\ \hline
+\cellcolor{Gray} 
+\makecell[l]{
+\textbf{Ekonomik/Ticari/Sosyal Çıktılar}\\
+(Ürün, Prototip, Patent, Faydalı Model,\\
+Üretim İzni, Tescil, Görsel/İşitsel Arşiv,\\
+Envanter/Veri Tabanı/Belgeleme Üretimi\\,
+Telife Konu Olan Eser, Spin-off/Start-up\\
+Şirket vb.):}
+&
+-
+&
+-
+\\ \hline
+\cellcolor{Gray} 
+\makecell[l]{
+\textbf{Araştırmacı Yetiştirilmesine Yönelik\phantom{aa}}\\
+Çıktılar (Yüksek Lisans/Doktora/Tıpta\\
+Uzmanlık Tezleri):}
+& 
+-
+&
+-
+\\ \hline
+\end{tabular}
+\flushleft{\footnotesize (*) Çizelgedeki satırlar ve sütunlar gerektiği kadar genişletilebilir ve çoğaltılabilir.}
+\end{center}
+\newpage
+
+\subsection{Projeden Elde Edilmesi Öngörülen Etkilere İlişkin Bilgiler}
+
+\begin{singlespace}
+Proje başarıyla gerçekleştirildiği takdirde projeden elde edilmesi öngörülen
+
+\begin{itemize}
+\item[-] Toplumsal/kültürel etki,
+\item[-] Akademik etki,
+\item[-] Ekonomik etki,
+\item[-] Ulusal Güvenlik etkisi
+\end{itemize}
+
+Proje Başvuru Sistemi (PBS)’nde seçilen 11. Kalkınma Planı hedefleri ve politikaları çerçevesinde hedef kitle/alan
+belirtilerek açıklanmalıdır. Beklenen etkiler doğrulanabilir ve ölçülebilir olmalıdır. Etkilerin elde edilme zamanına ilişkin
+öngörüler belirtilmelidir.
+\end{singlespace}
+
+\begin{center}
+\begin{tabular}{|p{6cm}|p{6cm}|p{4cm}|}
+\hline
+\cellcolor{Gray} 
+\makecell[c]{\textbf{Etki Türü}} &
+\makecell[c]{\textbf{Etki}} &
+\makecell[c]{
+\textbf{Etkinin Elde Edilmesi}\\
+\textbf{Öngörülen Zaman}}
+\\ \hline
+\cellcolor{Gray} 
+\textbf{Toplumsal/Kültürel Etki:}
+\begin{itemize}
+\item Yaşam Kalitesine Katkı,
+\item  Sürdürülebilir Çevre ve Enerjiye Katkı,
+\item  Refah veya Eğitim Seviyesinin\newline
+İyileştirilmesine Katkı,
+\item  Ülke ya da Dünya Düzeyinde Önemli 
+Bir Sosyal Soruna Getirilecek Çözümler vb.
+\end{itemize}
+&
+&
+\\ \hline
+\cellcolor{Gray} 
+\textbf{Akademik Etki:}
+\begin{itemize}
+\item Yeni Ar-Ge Kararları,
+\item Ulusal/Uluslararası Ar-Ge İşbirlikleri,
+\item Araştırmacı Sayısındaki ve Niteliğindeki
+Değişim,
+\item Üniversite- Sanayi İşbirliklerine Katkı vb.
+\end{itemize}
+&
+\vspace{0.2cm}
+Asd
+&
+\vspace{1cm}
+\makecell[c]{12-36 ay}
+\\ \hline
+\cellcolor{Gray} 
+\textbf{Ekonomik Etki:}
+\begin{itemize}
+\item Potansiyel Sektörel Uygulama Alanları,
+\item Küresel Pazar Öngörüleri,
+\item İstihdam Katkısı,
+Rekabetçilik (İhracata Etkisi, İthal İkamesi,
+Yeni Firmaların Oluşumu, Yabancı
+Sermaye Yatırımının Tetiklenmesi vb.)
+\end{itemize}
+&
+\vspace{0.2cm}
+Asd
+&
+\vspace{1cm}
+\makecell[c]{0-24 ay}
+\\ \hline
+\cellcolor{Gray} 
+\textbf{Ulusal Güvenlik Etkisi:}
+\begin{itemize}
+\item Siber güvenlik,
+\item Enerji güvenliği,
+\item Sınır güvenliği,
+\item Ekonomik güvenlik vb.
+\end{itemize}
+&
+&
+\\ \hline
+\end{tabular}
+\end{center}
+
+\subsection{Proje Çıktılarının Paylaşımı ve Yayılımı}
+
+Proje faaliyetleri boyunca elde edilecek çıktıların ve ulaşılacak sonuçların ilgili paydaşlar ve olası kullanıcılara ulaştırılması
+ve yayılmasına yönelik yapılacak olan toplantı, çalıştay, eğitim, web sitesi, medya, fuar, proje pazarı ve benzeri etkinlikler
+aşağıdaki tabloda verilmelidir.
+
+\begin{center}
+\textbf{PROJE ÇIKTILARININ PAYLAŞIMI VE YAYILIMI TABLOSU (*)}\\
+\vspace{0.3cm}
+\begin{tabular}{|c|p{6cm}|c|}
+\hline
+\rowcolor{Gray}
+\makecell[c]{
+\textbf{Etkinlik Türü} (Toplantı, Çalıştay, Eğitim,\\
+Web Sitesi, Medya, Fuar, Proje Pazarı\\
+vb.)}
+&
+\makecell[c]{\textbf{Paydaş / Olası Kullanıcılar}}
+&
+\textbf{Etkinliğin Zamanı ve Süresi}
+\\ \hline
+Asd
+&
+\makecell[c]{Asd}
+&
+...
+\\ \hline
+\end{tabular}
+\flushleft{\footnotesize (*) Çizelgedeki satırlar ve sütunlar gerektiği kadar genişletilebilir ve çoğaltılabilir.}
+\end{center}
+
+\noindent\textbf{\large BELİRTMEK İSTEDİĞİNİZ DİĞER KONULAR}\\
+
+\noindent Sadece proje önerisinin değerlendirilmesine katkı sağlayabilecek bilgi veya veri (grafik, tablo, vb.) eklenebilir.
+
+\begin{framed}
+\hfill\\
+\hfill\\
+\hfill
+\end{framed}
+
+
+\noindent \textbf{\large BAŞVURU FORMU EKLERİ}\\
+
+\noindent \textbf{EK-1: KAYNAKLAR}\newline
+\noindent \textbf{EK-2: BÜTÇE VE GEREKÇESİ}\newline
+\noindent \textbf{EK-3: PROJE EKİBİNİN DİĞER PROJELERİ VE GÜNCEL YAYINLARI (Proje Başvuru Sistemi (PBS)’ne girilen
+bilgiler doğrultusunda Sistem tarafından otomatik olarak oluşturulmaktadır.)}
+
+
+
+
+\clearpage
+\setlength{\parindent}{0pt}            
+\setcounter{page}{1}
+\bibliographystyle{tubitak}
+\bibliography{refs}
+
+
+\end{document}
+

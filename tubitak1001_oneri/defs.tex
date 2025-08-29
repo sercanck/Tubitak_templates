@@ -1,0 +1,349 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{uarial}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[fontsize=9pt]{scrextend}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{graphics}
+\usepackage{xcolor,colortbl}
+\usepackage{tabularx,multirow,hhline}
+\usepackage{framed}
+\usepackage{caption}
+\usepackage{pdflscape}
+\usepackage{makecell}
+\usepackage{lipsum} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\fontsize{9}{15}\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\fontsize{9}{12}\bfseries}{\thesubsection.}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\fontsize{9}{12}\bfseries}{\thesubsubsection.}{1em}{}
+
+
+
+\usepackage{caption}
+\renewcommand{\figurename}{Şekil}
+\renewcommand{\tablename}{Tablo}
+
+%\renewcommand{\thefigure}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{figure}}
+%\DeclareCaptionFormat{llap}{\llap{#1#2}#3\par}
+%\captionsetup{format=llap,labelsep=period,singlelinecheck=no}
+\captionsetup [figure]{labelfont=bf,font=singlespacing,font=small,
+position=bottom,singlelinecheck=true,aboveskip=12pt,belowskip=12pt}
+\captionsetup [table]{format=hang,labelfont=bf,font=singlespacing,font=small,
+position=above,singlelinecheck=true,aboveskip=12pt,belowskip=12pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[bookmarks, colorlinks, breaklinks, pdftitle={Tubitak 1001},pdfauthor={ },
+            citecolor=blue]{hyperref}
+\usepackage[authoryear,sort&compress,round]{natbib}
+\usepackage{url,doi}
+\renewcommand{\bibsection}{\textbf{EK-1: KAYNAKLAR}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[skip=0.6\baselineskip]{parskip}
+\usepackage[top=3.0cm,headheight=1.5cm,headsep=0.5cm,
+            left=2cm,textwidth=17.2cm,textheight=24cm]{geometry}
+\usepackage{indentfirst}
+\setlength{\parindent}{15pt}            
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\cfoot{\vspace{2pt}\thepage}
+\chead{\includegraphics{./tubitak.jpg}}
+\lfoot{\small 1001--BF--01  Güncelleme Tarihi: 28/01/2025} %font 8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fancypagestyle{mylandscape}{
+\fancyhf{} %Clears the header/footer
+\fancyhead[C]{
+\makebox[\textwidth][l]{
+\rlap{
+\smash{
+\raisebox{-4.87in}{
+\rotatebox{90}{\includegraphics{./tubitak.jpg}}
+}}}
+}}
+\fancyfoot[L]{% Footer
+\smash{
+\hspace{17.5cm}
+\rotatebox{90}{\small 1001--BF--01  Güncelleme Tarihi: 28/01/2025}}}
+\fancyfoot[C]{
+\makebox[\textwidth][r]{% Right
+%  \rlap{
+%  \hspace{.75cm}% Push out of margin by \footskip
+%  \smash{% Remove vertical height
+%  \raisebox{4.87in}{% Raise vertically
+%  \rotatebox{90}{\small 3501BF-01 Güncelleme Tarihi: 30/09/2019}}}}
+%
+   \rlap{
+   \hspace{.75cm}% Push out of margin by \footskip
+    \smash{% Remove vertical height
+    \raisebox{4.87in}{% Raise vertically
+    \rotatebox{90}{\thepage}}}}
+    }}% Rotate counter-clockwise
+\renewcommand{\headrulewidth}{0pt}% No header rule
+\renewcommand{\footrulewidth}{0pt}% No footer rule
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{Gray}{gray}{0.85}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{Q}[1]{>{\columncolor{Gray}\centering\arraybackslash}m{#1}}
+\newcolumntype{P}[1]{>{\columncolor{Gray}\arraybackslash}p{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+\newtcolorbox{ozet}[1][]{%
+colback=white,colframe=black,
+width=\textwidth,
+sharp corners,
+breakable,
+bottomrule=0.5pt, 
+toprule=0.5pt,  % thicknesses of various lines
+leftrule=0.5pt, 
+rightrule=0.5pt,
+left=6pt,
+right=6pt,  
+parbox=false,
+segmentation style={solid},  
+#1
+}
+
+\newtcolorbox{summary}[2][]{%
+colbacktitle=white,
+coltitle=black,
+colback=white,
+colframe=black,
+width=\textwidth,
+sharp corners,
+breakable,
+titlerule=0.5pt,
+bottomrule=0.5pt, 
+toprule=0.5pt,  % thicknesses of various lines
+leftrule=0.5pt, 
+rightrule=0.5pt,
+left=6pt,
+right=6pt,  
+parbox=false,
+segmentation style={solid},  
+title={\textbf{Title:} #2}
+#1
+}
+
+\newtcolorbox{kutudortlu}[1][]{%
+colback=white,colframe=black,
+width=\textwidth,
+sharp corners,
+breakable,
+bottomrule=0.5pt, 
+toprule=0.5pt,  % thicknesses of various lines
+leftrule=0.5pt, 
+rightrule=0.5pt,
+left=6pt,
+right=6pt,  
+parbox=false,
+segmentation style={solid},
+lowerbox=invisible,
+#1
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{pgfmath}  
+\usepackage{xstring}  
+\usepackage{refcount} 
+
+\newcommand{\refte}[1]{%
+  \IfSubStr{\getrefnumber{#1}}{.}{%
+    \StrBehind{\getrefnumber{#1}}{.}[\eqnum]}%     % Extract part after dot
+  { \def\eqnum{\getrefnumber{#1}} }%   
+  \ifx\eqnum\empty%
+   \autoref{#1}'te
+  \else%
+  \pgfmathparse{int(mod(\eqnum , 10))}% Extract last digit
+  \let\lastdigit\pgfmathresult%
+  \pgfmathparse{int(mod(\eqnum , 100))} % Extract last digit
+  \let\lasttwodigit\pgfmathresult%
+  \autoref{#1}'%
+  \ifnum\lastdigit=0%
+      \ifnum\lasttwodigit=0 de%
+      \else\ifnum\lasttwodigit=10 da%
+      \else\ifnum\lasttwodigit=20 de%
+      \else\ifnum\lasttwodigit=30 da%
+      \else\ifnum\lasttwodigit=40 ta%
+      \else\ifnum\lasttwodigit=50 de%
+      \else\ifnum\lasttwodigit=60 ta%
+      \else\ifnum\lasttwodigit=70 te%
+      \else\ifnum\lasttwodigit=80 de%
+      \else\ifnum\lasttwodigit=90 da%
+      \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
+  \else\ifnum\lastdigit=1 de%
+  \else\ifnum\lastdigit=2 de%
+  \else\ifnum\lastdigit=3 te%
+  \else\ifnum\lastdigit=4 te%
+  \else\ifnum\lastdigit=5 te%
+  \else\ifnum\lastdigit=6 da%
+  \else\ifnum\lastdigit=7 de%
+  \else\ifnum\lastdigit=8 de%
+  \else\ifnum\lastdigit=9 da%
+  \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
+\fi
+}
+
+\newcommand{\refin}[1]{%
+  \IfSubStr{\getrefnumber{#1}}{.}{%
+    \StrBehind{\getrefnumber{#1}}{.}[\eqnum]}%     % Extract part after dot
+  { \def\eqnum{\getrefnumber{#1}} }%   
+  \ifx\eqnum\empty
+   \autoref{#1}'in
+  \else
+  \pgfmathparse{int(mod(\eqnum , 10))}% % Extract last digit
+  \let\lastdigit\pgfmathresult%
+  \autoref{#1}'%
+  \ifnum\lastdigit=0%
+      \pgfmathparse{int(mod(\eqnum , 100))}% % Extract last digit
+      \let\lasttwodigits\pgfmathresult%
+      \ifnum\lasttwodigits=0 ün%
+      \else\ifnum\lasttwodigits=10 un% 
+      \else\ifnum\lasttwodigits=20 nin%
+      \else\ifnum\lasttwodigits=30 un%
+      \else\ifnum\lasttwodigits=40 ın%
+      \else\ifnum\lasttwodigits=50 nin%
+      \else\ifnum\lasttwodigits=60 ın%
+      \else\ifnum\lasttwodigits=70 in%
+      \else\ifnum\lasttwodigits=80 nin%
+      \else\ifnum\lasttwodigits=90 nın%
+      \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi 
+  \else\ifnum\lastdigit=1 in%
+  \else\ifnum\lastdigit=2 nin%
+  \else\ifnum\lastdigit=3 ün%
+  \else\ifnum\lastdigit=4 ün%
+  \else\ifnum\lastdigit=5 in%
+  \else\ifnum\lastdigit=6 nın%
+  \else\ifnum\lastdigit=7 nin%
+  \else\ifnum\lastdigit=8 in%
+  \else\ifnum\lastdigit=9 un%
+  \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
+\fi
+}
+
+
+\newcommand{\refi}[1]{%
+  \IfSubStr{\getrefnumber{#1}}{.}{%
+    \StrBehind{\getrefnumber{#1}}{.}[\eqnum]}%     % Extract part after dot
+  { \def\eqnum{\getrefnumber{#1}} }%   
+  \ifx\eqnum\empty
+   \autoref{#1}'i
+  \else
+  \pgfmathparse{int(mod(\eqnum , 10))}% % Extract last digit
+  \let\lastdigit\pgfmathresult%
+  \autoref{#1}'%
+  \ifnum\lastdigit=0%
+      \pgfmathparse{int(mod(\eqnum , 100))}% % Extract last digit
+      \let\lasttwodigits\pgfmathresult%
+      \ifnum\lasttwodigits=0 ü%
+      \else\ifnum\lasttwodigits=10 u% 
+      \else\ifnum\lasttwodigits=20 yi%
+      \else\ifnum\lasttwodigits=30 u%
+      \else\ifnum\lasttwodigits=40 ı%
+      \else\ifnum\lasttwodigits=50 yi%
+      \else\ifnum\lasttwodigits=60 ı%
+      \else\ifnum\lasttwodigits=70 i%
+      \else\ifnum\lasttwodigits=80 i%
+      \else\ifnum\lasttwodigits=90 ı%
+      \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi % 
+  \else\ifnum\lastdigit=1 i%
+  \else\ifnum\lastdigit=2 yi%
+  \else\ifnum\lastdigit=3 ü%
+  \else\ifnum\lastdigit=4 ü%
+  \else\ifnum\lastdigit=5 i%
+  \else\ifnum\lastdigit=6 yı%
+  \else\ifnum\lastdigit=7 yi%
+  \else\ifnum\lastdigit=8 i%
+  \else\ifnum\lastdigit=9 u%
+  \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
+\fi
+}
+
+
+\newcommand{\refe}[1]{%
+  \IfSubStr{\getrefnumber{#1}}{.}{%
+    \StrBehind{\getrefnumber{#1}}{.}[\eqnum]}%     % Extract part after dot
+  { \def\eqnum{\getrefnumber{#1}} }%   
+  \ifx\eqnum\empty%
+   \autoref{#1}'e%
+  \else%
+  \pgfmathparse{int(mod(\eqnum , 10))}% % Extract last digit
+  \let\lastdigit\pgfmathresult%
+  \autoref{#1}'%
+  \ifnum\lastdigit=0%
+      \pgfmathparse{int(mod(\eqnum , 100))}% % Extract last digit
+      \let\lasttwodigits\pgfmathresult%
+      \ifnum\lasttwodigits=0 e%
+      \else\ifnum\lasttwodigits=10 a% 
+      \else\ifnum\lasttwodigits=20 ye%
+      \else\ifnum\lasttwodigits=30 a%
+      \else\ifnum\lasttwodigits=40 a%
+      \else\ifnum\lasttwodigits=50 ye%
+      \else\ifnum\lasttwodigits=60 a%
+      \else\ifnum\lasttwodigits=70 e%
+      \else\ifnum\lasttwodigits=80 e%
+      \else\ifnum\lasttwodigits=90 a%
+      \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
+  \else\ifnum\lastdigit=1 e%
+  \else\ifnum\lastdigit=2 ye%
+  \else\ifnum\lastdigit=3 e%
+  \else\ifnum\lastdigit=4 e%
+  \else\ifnum\lastdigit=5 e%
+  \else\ifnum\lastdigit=6 ya%
+  \else\ifnum\lastdigit=7 ye%
+  \else\ifnum\lastdigit=8 e%
+  \else\ifnum\lastdigit=9 a%
+  \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
+  \fi
+}
+
+\newcommand{\reften}[1]{%
+  \IfSubStr{\getrefnumber{#1}}{.}{%
+    \StrBehind{\getrefnumber{#1}}{.}[\eqnum]}%     % Extract part after dot
+  { \def\eqnum{\getrefnumber{#1}} }%   
+  \ifx\eqnum\empty%
+   \autoref{#1}'ten%
+  \else%
+  \pgfmathparse{int(mod(\eqnum , 10))}% % Extract last digit
+  \let\lastdigit\pgfmathresult%
+  \autoref{#1}'%
+  \ifnum\lastdigit=0% 
+      \pgfmathparse{int(mod(\eqnum , 100))}% % Extract last digit
+      \let\lasttwodigits\pgfmathresult%
+      \ifnum\lasttwodigits=0 dan%
+      \else\ifnum\lasttwodigits=10 dan% 
+      \else\ifnum\lasttwodigits=20 den%
+      \else\ifnum\lasttwodigits=30 dan%
+      \else\ifnum\lasttwodigits=40 tan%
+      \else\ifnum\lasttwodigits=50 den%
+      \else\ifnum\lasttwodigits=60 tan%
+      \else\ifnum\lasttwodigits=70 ten%
+      \else\ifnum\lasttwodigits=80 den%%
+      \else\ifnum\lasttwodigits=90 dan%
+      \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi%
+  \else\ifnum\lastdigit=1 den%
+  \else\ifnum\lastdigit=2 den%
+  \else\ifnum\lastdigit=3 ten%
+  \else\ifnum\lastdigit=4 ten%
+  \else\ifnum\lastdigit=5 ten%
+  \else\ifnum\lastdigit=6 dan%
+  \else\ifnum\lastdigit=7 den%
+  \else\ifnum\lastdigit=8 den%
+  \else\ifnum\lastdigit=9 dan%
+  \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi%
+\fi%
+}
