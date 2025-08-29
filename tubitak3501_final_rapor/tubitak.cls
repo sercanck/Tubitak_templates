@@ -10,8 +10,9 @@
 \usepackage{xcolor}
 %%%%%%%%Font
 \usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{uarial}
+%\usepackage[utf8]{inputenc}
+\usepackage[scaled=0.92]{helvet} 
+%\usepackage{uarial}
 \usepackage[turkish,shorthands=off]{babel}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[fontsize=11pt]{scrextend} %Birimi bp yaparsan wordle aynı oluyor ama small niyeyse sacmalıyor.
