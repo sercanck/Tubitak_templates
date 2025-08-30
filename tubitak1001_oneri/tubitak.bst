@@ -1,5 +1,6 @@
 %% File: `plainnat.bst'
 %% A modification of `plain.bst' for use with natbib package 
+%% (and for Tubitak templates by Sercan Cikintoglu)
 %%
 %% Copyright 1993-2007 Patrick W Daly
 %% Max-Planck-Institut f\"ur Sonnensystemforschung
